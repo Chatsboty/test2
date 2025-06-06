@@ -25,3 +25,13 @@ npm start
 The app will be available at [http://localhost:3000](http://localhost:3000).
 
 *Note: This project is for demo purposes and does not include persistent storage or authentication best practices.*
+
+## Deploying to GitHub Pages
+
+You can publish the static frontend from the `public` directory using GitHub Pages. After installing dependencies, run:
+
+```bash
+npm run deploy
+```
+
+This command uses the `gh-pages` package to push the contents of `public` to a `gh-pages` branch, making the site available at `https://<username>.github.io/<repository>`. The Express backend does not run on GitHub Pages, so dynamic features require running the server locally with `npm start`.
